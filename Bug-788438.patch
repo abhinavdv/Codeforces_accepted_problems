@@ -1,0 +1,20 @@
+# HG changeset patch
+# User abhinav <dvabhinav31@gmail.com>
+# Date 1514521545 -19800
+#      Fri Dec 29 09:55:45 2017 +0530
+# Node ID 5afa9e8f54d917eacf10f2639fbcfddddaeed0b7
+# Parent  f0f170bd40e84daeae7eeb3f658a34d05a968d75
+bug-788438 removed i in textdirectproxyvalidateproperty6
+
+diff --git a/js/src/jit-test/tests/proxy/testDirectProxyValidateProperty6.js b/js/src/jit-test/tests/proxy/testDirectProxyValidateProperty6.js
+--- a/js/src/jit-test/tests/proxy/testDirectProxyValidateProperty6.js
++++ b/js/src/jit-test/tests/proxy/testDirectProxyValidateProperty6.js
+@@ -8,7 +8,7 @@ load(libdir + "asserts.js");
+  */
+ var target = {};
+ Object.defineProperty(target, 'foo', {
+-    set: function (value) {i
++    set: function (value) {
+         target.foo = 'bar';
+     },
+     configurable: false
