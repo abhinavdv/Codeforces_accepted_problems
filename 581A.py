@@ -1,0 +1,7 @@
+a,b = list(map(int, input().split()))
+a = int(a)
+b = int(b)
+c = min(a,b)
+d = max(a,b)
+print(c, end =" ")
+print((d-c)//2)
